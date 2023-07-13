@@ -26,7 +26,7 @@ const MAX_IMAGE_SIZE = 1000000
 /* ENTER YOUR ENDPOINT HERE
    FILES UPLOADED TO MY ENDPOINT ARE AUTOMATICALLY DELETED EVERY FEW HOURS */
 
-const API_ENDPOINT = 'https://sk0wfrn784.execute-api.us-east-2.amazonaws.com/default/project-Serverless'
+const API_ENDPOINT = 'https://f56cc1guqi.execute-api.us-east-2.amazonaws.com/default/project-Serverless'
 
 export default {
   name: 'app',
@@ -66,8 +66,7 @@ export default {
       // Get the presigned URL
       const response = await axios({
         method: 'GET',
-        url: API_ENDPOINT,
-          headers: { 'Content-Type': 'application/json' }
+        url: API_ENDPOINT
       })
       console.log('Response: ', response.data)
       console.log('Uploading: ', this.image)
