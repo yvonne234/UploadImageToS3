@@ -66,7 +66,8 @@ export default {
       // Get the presigned URL
       const response = await axios({
         method: 'GET',
-        url: API_ENDPOINT
+        url: API_ENDPOINT,
+          headers: { 'Content-Type': 'application/json' }
       })
       console.log('Response: ', response.data)
       console.log('Uploading: ', this.image)
