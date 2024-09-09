@@ -26,7 +26,7 @@ const MAX_IMAGE_SIZE = 1000000
 /* ENTER YOUR ENDPOINT HERE
    FILES UPLOADED TO MY ENDPOINT ARE AUTOMATICALLY DELETED EVERY FEW HOURS */
 
-const API_ENDPOINT = 'https://geav19vyg3.execute-api.us-east-1.amazonaws.com/default/ProjAug'
+const API_ENDPOINT = 'https://fr01j0d2sa.execute-api.us-east-1.amazonaws.com/default/SL-Fun'
 
 export default {
   name: 'app',
